@@ -1,0 +1,68 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.card{
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    width: 340px;
+    height: 330px;
+}
+
+.card img{
+    width: 140px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.steps p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.steps{
+    overflow-y: scroll;
+    position: relative;
+    top: 60px;
+    visibility: hidden;
+    transition: 0.3s;
+    opacity: 0;
+    margin: 0 10px;
+}
+
+.card:hover .steps{
+    visibility: initial;
+    top: 0px;
+    opacity: 1;
+}
+
+.card article {
+    padding: 5px;
+  }
+  .card h3 {
+    margin: 0;
+    padding: 4px;
+  }
+  
+  .steps p {
+    margin: 0 5px;
+  }
+
+  .steps .btn{
+    align-items: center;
+  }
